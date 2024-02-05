@@ -41,5 +41,10 @@ This is an example of converting the attached test.vec to png.
 test.vecは[Avayaサイト](https://documentation.avaya.com/fr-CA/bundle/CCEliteCallVectoringFeatureDescription_r10.1/page/ExampleApplicationUsingAVectorVariableInOtherCommands.html)を参照して作成しました。  
 The test.vec was created based on the contents of the [Avaya site](https://documentation.avaya.com/fr-CA/bundle/CCEliteCallVectoringFeatureDescription_r10.1/page/ExampleApplicationUsingAVectorVariableInOtherCommands.html).
 
+# バグ, プルリクエスト等/Bugs, Pull requests
+
+バグ報告やプルリクエストはお気軽に。バグ発見時は上部のissueを起票お願いします。  
+Please feel free to report bugs and pull requests. If you find a bug, please submit an issue at the top of the page.
+
 # ライセンス/License
-MIT License
+[MIT License](https://github.com/satsubatsutaro/vector2flowchart/blob/main/LICENSE)
