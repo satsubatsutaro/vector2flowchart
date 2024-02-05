@@ -1,0 +1,9 @@
+1 wait-time 0 secs hearing ringback
+2 goto step 8 if staffed-agents in skill 22 < 100
+3 queue-to skill 22 pri l
+4 wait-time 6 secs hearing ringback
+5 announcement 2001
+6 wait-time 60 secs hearing music
+7 goto step 3 unconditionally
+8 route-to number R
+9 goto step 3 unconditionally
