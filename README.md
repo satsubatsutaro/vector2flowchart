@@ -33,12 +33,13 @@ node vector2mermaid.js 保存したファイルパスファイル名.vec > hoge.
 
 添付のtest.vecをpngに変換した例です。  
 This is an example of converting the attached test.vec to png.
-  
+  ![mermaid-diagram-2024-02-05-234355](https://github.com/satsubatsutaro/vector2flowchart/assets/812333/62a5ab72-e602-4cd9-aaac-4e8a2b4e6d86)
+
 
 # 参照/Reference
 
 test.vecは[Avayaサイト](https://documentation.avaya.com/fr-CA/bundle/CCEliteCallVectoringFeatureDescription_r10.1/page/ExampleApplicationUsingAVectorVariableInOtherCommands.html)を参照して作成しました。  
-The test.vec was created based on the contents of the [Avaya site]((https://documentation.avaya.com/fr-CA/bundle/CCEliteCallVectoringFeatureDescription_r10.1/page/ExampleApplicationUsingAVectorVariableInOtherCommands.html)).
+The test.vec was created based on the contents of the [Avaya site](https://documentation.avaya.com/fr-CA/bundle/CCEliteCallVectoringFeatureDescription_r10.1/page/ExampleApplicationUsingAVectorVariableInOtherCommands.html).
 
 # ライセンス/License
 MIT License
