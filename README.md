@@ -2,7 +2,7 @@
 
 このスクリプトはAvayaのvectorをMermaid記法に変換することで、最終的にフロー図(flowchart)を作成することを目的としたスクリプトです。  
 Mermaid記法に変換した後は[Mermaid-cli](https://github.com/mermaid-js/mermaid-cli)や[Mermaid Live Editor](https://mermaid.live/edit)でpngやsvg形式にすることができます。  
-This script is intended to create flowcharts by converting Avaya vectors to Mermaid notation.
+This script is intended to create flowcharts by converting Avaya vectors to Mermaid notation.  
 After converting to Mermaid notation, you can use [Mermaid-cli](https://github.com/mermaid-js/mermaid-cli) or [Mermaid Live Editor](https://mermaid.live/edit) to convert to png or svg format.
 
 # 要件/Requirements
