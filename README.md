@@ -27,7 +27,11 @@ Please redirect if you want to file.
 ```
 node vector2mermaid.js 保存したファイルパスファイル名.vec > hoge.mmd
 ```
+# オプション/Option
 
+```
+-s ステップ番号を表示します/Show step number
+```
   
 # 生成例/Example
 
