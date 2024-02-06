@@ -1,4 +1,13 @@
-filename = process.argv[2]
+const util = require("util")
+const parsed = util.parseArgs({
+	options: {
+		s: { type: "boolean" },
+	},
+	allowPositionals: true,
+})
+
+filename = parsed["positionals"][0]
+
 var readlines = require('fs').readFileSync(filename, 'utf-8')
     .split('\r\n')
     .filter(Boolean);
@@ -11,12 +20,19 @@ readlines.forEach(function(element){
     if(conditional != null && unconditional == null){
         var op = conditional[1];
         var cond = conditional[2];
+        if("s" in parsed["values"]){
+            cond = linenum + ": " +cond;
+            op = linenum + "_2: " +op;
+        }
         boxes.push(`op${linenum}{${cond}}`)
         boxes.push(`op${linenum}_2[${op}]`)
     }
     else{
         var match2 = element.match(/^\d+ (.+)$/i);
         var op = match2[1];
+        if("s" in parsed["values"]){
+            op = linenum + ": " +op;
+        }
         boxes.push(`op${linenum}[${op}]`)
     }
 });
