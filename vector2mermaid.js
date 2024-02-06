@@ -6,10 +6,11 @@ var readlines = require('fs').readFileSync(filename, 'utf-8')
 var boxes = []
 readlines.forEach(function(element){
     linenum = parseInt(element.match(/^\d+/)).toString();
-    var match = element.match(/^\d+ (.+)\s+if\s+(.+)$/i);
-    if(match != null){
-        var op = match[1];
-        var cond = match[2];
+    var conditional = element.match(/^\d+ (.+)\s+if\s+(.+)$/i);
+    var unconditional = element.match(/unconditionally/i);
+    if(conditional != null && unconditional == null){
+        var op = conditional[1];
+        var cond = conditional[2];
         boxes.push(`op${linenum}{${cond}}`)
         boxes.push(`op${linenum}_2[${op}]`)
     }
@@ -40,7 +41,7 @@ for (var i = 0; i < boxes.length; i++) {
     }
     else if(boxes[i].match(/stop/i)) {
     }
-    else if(boxes.length >= (i + 1)){
+    else if(boxes.length > (i + 1)){
         var to = boxes[i+1].match(/^([^\{\[\(]+)/i)[1];
         connections.push(`${from}-->${to}`)
     }
